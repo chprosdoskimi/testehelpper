@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/error.css">
+  <title>Crud Restful Test Mock</title>
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Crud Restful Test Mock</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#register">Cadastrar <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#list">Listar</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="container" id="register">
+    <h2>Cadastrar Usuário</h2>
+    <form id="formUser" action="" class="form">
+      <div class="form-group">
+        <label for="inputName">Nome</label>
+        <input type="text" name="nome" class="form-control isValid" id="inputName" placeholder="Digite seu nome" >
+      </div>
+      <div class="form-group">
+        <label for="inputLastName">Sobrenome</label>
+        <input type="text" name="sobrenome" class="form-control isValid" id="inputLastName" placeholder="Digite seu sobrenome" >
+      </div>
+      <div class="form-group">
+        <label for="inputAge">Idade</label>
+        <input type="text" name="idade" class="form-control isValid" id="inputAge" placeholder="Digite sua idade" maxlength="3">
+      </div>
+      <div class="form-group">
+        <label for="inputPhone">Telefone</label>
+        <input type="text" name="telefone" class="form-control isValid" id="inputPhone" placeholder="Digite seu telefone" maxlength="15">
+      </div>
+      <div class="form-group">
+        <label for="inputCpf">CPF</label>
+        <input type="text" name="cpf" class="form-control isValid" id="inputCpf" placeholder="Digite seu CPF" maxlength="14">
+      </div>
+      
+      <h3>Endereço</h3>
+      <div class="form-row addressForm">
+        <div class="form-group col-md-2">
+          <label>CEP</label>
+          <input type="text" name="cep" class="form-control isValid" id="inputCep" placeholder="01001-000"  maxlength="9">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="inputStreet">Logradouro</label>
+          <input type="text"name="logradouro" class="form-control" id="inputStreet" placeholder="Ex: Rua Alfeneiros" disabled>
+        </div>
+        <div class="form-group col-md-3">
+          <label for="inputDistrict">Bairro</label>
+          <input type="text"name="bairro" class="form-control" id="inputDistrict" placeholder="Ex: Jardim Bela Vista" disabled>
+        </div>
+
+        <div class="form-group col-md-2">
+          <label for="inputCity">Localidade</label>
+          <input type="text"name="localidade" class="form-control" id="inputCity" placeholder="Ex: São Paulo" disabled>
+        </div>
+        
+        <div class="form-group col-md-1">
+          <label for="inputUf">UF</label>
+          <input type="text" name="uf" class="form-control" id="inputUf" placeholder="Ex: SP" disabled>
+        </div>
+        
+      </div>
+      
+      <button type="submit" class="btn btn-primary mb-4">Cadastrar</button>
+      <button type="reset" class="btn btn-danger mb-4">Cancelar</button>
+     </div>
+    </form>
+  </div>
+  
+  <div class="container" id="list">
+    <h2>Lista de Usuários</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Nome</th>
+          <th scope="col">Sobrenome</th>
+          <th scope="col">Telefone</th>
+          <th scope="col">CEP</th>
+          <th scope="col">Logradouro</th>
+          <th scope="col">Bairro</th>
+          <th scope="col">Localidade</th>
+          <th scope="col">UF</th>
+          <th scope="col">Ações</th>
+        </tr>
+      </thead>
+      <tbody>  
+      </tbody>
+
+    </table>
+  </div>
+
+<script src="assets/js/request.js"></script>
+<script src="assets/js/User.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/makeError.js"></script>
+<script src="assets/js/validateCPF.js"></script>
+<script src="assets/js/validateCEP.js"></script>
+<script src="assets/js/inputMask.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
