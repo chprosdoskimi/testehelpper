@@ -7,9 +7,9 @@ Este teste foi proposto pela Helpper para vaga de estágio, que resumia desenvol
 
 ## Features
 
-  -[x] Cadastrar Usuário
-  -[x] Listar Usuário
-  -[x] Deletar Usuário
+  - [x] Cadastrar Usuário
+  - [x] Listar Usuário
+  - [x] Deletar Usuário
 
 ## Pré-requisitos
 
