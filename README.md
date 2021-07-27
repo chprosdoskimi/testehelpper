@@ -10,6 +10,7 @@ Este teste foi proposto pela Helpper para vaga de estágio, que resumia desenvol
   - [x] Cadastrar Usuário
   - [x] Listar Usuário
   - [x] Deletar Usuário
+  - [x] Atualizar Usuário
 
 ## Pré-requisitos
 
